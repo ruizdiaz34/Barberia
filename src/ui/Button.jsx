@@ -5,15 +5,16 @@ export default function Button({
   ...props
 }) {
   const styles = {
-    primary: "bg-red-600 hover:bg-red-700 text-white",
+    primary: "text-white",
     secondary: "bg-white text-black border",
   };
 
   return (
     <button
       className={`
-        px-6 py-3 rounded-lg font-semibold
-        transition duration-300
+        cursor-pointer
+        bg-yellow-500 text-black px-6 py-3 rounded-md font-semibold transition-all duration-300
+        hover:bg-yellow-400 hover:scale-105 hover:shadow-xl
         ${styles[variant]}
         ${className}
       `}
